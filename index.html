@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guitar Story</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+<article>
+	<main>
+		<section id="guitar">
+			<div id="guitar-container">
+				<img src="img/guitar-top.svg" class="mobile-only" id="guitar-top"/>
+			</div>
+		</section>
+
+		<div id="guitar-full-container">
+			<!--<img src="img/guitar-full.svg" class="desktop-only" id="guitar-full"/>-->
+			<img src="img/guitar-full-top.svg" class="desktop-only" id="guitar-full-top"/>
+			<img src="img/guitar-full-bottom.svg" class="desktop-only" id="guitar-full-bottom"/>
+			<div id="guitar-neck" class="desktop-only"></div>
+
+			<div id="red" class="desktop-only"></div>
+
+			<div id="intro">
+				<span class="highlight">To</span> outsiders, pedal fixation probably seems a bit, well, dorky. These brightly painted and oddly named totems stoke raging debates in chat rooms, fuel the kind of sleepless, ascetic research that’s typically devoted to holy texts, and drive adults to surreptitiously stash little boxes beneath their beds and in car trunks, because ... they had to have just this one more. But for all the weird obsessions pedals fire within us, they are, in the end, about creation, joy, and happiness. Plug in a phaser and ambient reverb, hand a guitar to someone who’s never touched one before, and watch the smile spread as the simple thump of an E string becomes the soundtrack to a science-fiction dream. Every year at Premier Guitar, we celebrate the stompbox—those prized gadgets that help us embrace and decode the mysteries of sound. It’s that time again: Together we’ll explore 30 new tone toys, a few of which are likely to wind up stashed under your bed. (Don’t say we didn’t warn you.)And while we’re reveling in this pile o’ pedals, let’s also salute the minds and imaginations of the folks who make this stuff—in some cases, they’re the most tireless renegades, misfits, and weirdoes who ever came down the line. Their hours spent both in solitude and conspiring with other freaks give us the treasures we’ll behold over the next few dozen pages. May their work forever channel our musical reveries. Enjoy!
+			</div>
+
+			<div id="buttons" class="desktop-only">
+				
+				<div class="button active btn-review" data-action="review">
+					<img src="img/button.png" class="btn-img"/>
+					<div class="btn-text">Review</div>
+				</div>
+
+				<div class="button btn-vid" data-action="vid">
+					<img src="img/button.png" class="btn-img"/>
+					<div class="btn-text">Video</div>
+				</div>
+
+				<div class="button btn-rating" data-action="rating">
+					<img src="img/button.png" class="btn-img"/>
+					<div class="btn-text">Rating</div>
+				</div>
+
+			</div>
+			<div id="content-space" class="desktop-only">
+				<div id="main-view">
+					<div id="content-review" class="view"></div>
+					<div id="content-vid" class="view" style="display:none;"></div>
+					<div id="content-rating" class="view" style="display:none;"></div>
+				</div>
+				<div id="content-title"></div>
+			</div>
+			<img src="img/arrow.png" class="scroll-arrow desktop-only"/>
+			
+		</div><!-- end guitar full container -->
+		
+		<div id="pedal-container">
+			<img src="img/guitar-bottom1.svg" class="mobile-only" id="guitar-bottom1"/>
+
+			
+
+			<section id="pedals">
+				<div id="instructions">Tap to read review</div>
+
+				<!-- START PEDAL -->
+				<div class="pedal selected" data-pedal="daredevil-nova">
+					<div class="selection-highlight"></div>
+					<img src="img/pedal1.png" alt="DAREDEVIL Nova" class="pedal-img"/>
+					<p class="pedal-name">DAREDEVIL Nova</p>
+				</div>
+				<!-- END PEDAL-->
+
+				<!-- START PEDAL -->
+				<div class="pedal" data-pedal="mxr-la-machine">
+					<div class="selection-highlight"></div>
+					<img src="img/pedal2.png" alt="MXR La Machine" class="pedal-img"/>
+					<p class="pedal-name">MXR La Machine</p>
+				</div>
+				<!-- END PEDAL-->
+
+				<!-- START PEDAL -->
+				<div class="pedal" data-pedal="providence-redrock">
+					<div class="selection-highlight"></div>
+					<img src="img/pedal3.png" alt="PROVIDENCE Redrock OD ROD-1" class="pedal-img"/>
+					<p class="pedal-name">PROVIDENCE Redrock<br/>OD ROD-1</p>
+				</div>
+				<!-- END PEDAL-->
+
+				<!-- START PEDAL -->
+				<div class="pedal" data-pedal="dls-reckless-driver">
+					<div class="selection-highlight"></div>
+					<img src="img/pedal4.png" alt="DLS Reckless Driver" class="pedal-img"/>
+					<p class="pedal-name">DLS Reckless Driver</p>
+				</div>
+				<!-- END PEDAL-->
+
+				<!-- START PEDAL -->
+				<div class="pedal" data-pedal="carl-martin">
+					<div class="selection-highlight"></div>
+					<img src="img/pedal5.png" alt="CARL MARTIN Purple oon Fuzz/Vibe" class="pedal-img"/>
+					<p class="pedal-name">CARL MARTIN Purple Moon Fuzz/Vibe</p>
+				</div>
+				<!-- END PEDAL-->
+
+				<!-- START PEDAL -->
+				<div class="pedal" data-pedal="way-huge-havalina">
+					<div class="selection-highlight"></div>
+					<img src="img/pedal6.png" alt="WAY HUGE Havalina" class="pedal-img"/>
+					<p class="pedal-name">WAY HUGE Havalina</p>
+				</div>
+				<!-- END PEDAL-->
+			</section>
+
+			<img src="img/guitar-bottom2.svg" class="mobile-only" id="guitar-bottom2"/>
+		</div>
+
+		<section id="info" class="mobile-only">
+			
+			<!-- START PEDAL -->
+			<div id="daredevil-nova" class="pedal-section">
+				<h1 class="pedal-name"><span class="name-highlight">Daredevil</span> Nova</h1>
+				
+				<!-- REVIEW -->
+				<div class="pedal-review-container">
+					<div class="pedal-review">
+						<img src="img/big/pedal1.png" alt="Daredevil Nova" class="pedal-large"/>
+						<div class="pedal-info">
+							<p>Chicago-based Daredevil Pedals loves fuzz. In just a few short years, founder Johnny Wator has produced everything from original twists on the Fuzzrite and Russian Big Muff to the growling Ronson-inspired Atomic Cock. Daredevil typically avoids clones&#8212;adding a little extra gain or extra range in a tone stack instead to make a classic unique. That&#8217;s the case with the new Nova fuzz, an original, simple silicon transistor fuzz that offers an alternative to the same old Maestro, Tone Bender, or Fuzz Face clone.</p>
+
+							<h2>Muscular Simplicity</h2>
+
+							<p>The Nova&#8217;s white and purple sparkle paint job would look fantastic on its vehicular namesake. But the utilitarian nature of this fuzz aligns with the intent of Chevy&#8217;s no-frills muscle-car platform too. There are just two controls: volume and saturation. Volume controls the output&#8212;no surprise there&#8212;and the latter is essentially the gain or fuzz control, and turning it clockwise increases the crunch. Overall, the Nova is sturdy and carefully wired on the inside.</p>
+
+							<p>This deceptively simple pedal sounds immense and dangerous without getting bulbous and rotund.</p>
+
+							<h2>Laying Rubber</h2>
+
+							<p>Wator&#8217;s aim with the Nova was to create a fuzz that would work well in a two-guitar band. The Maestro FZ-1 was a tone touchstone for it&#8217;s high-end bite, but Wator wanted more versatility and gustoin a live setting than a germanium Maestro-type circuit could deliver. The silicon circuitry of the Nova ensures that it does not lack presence. Unity both for humbuckers and single-coils is right around high noon, and that leaves you with a fair amount of headroom if you want to increase the output.</p>
+
+							<p>For all its two-knob simplicity, the Nova produces many unique fuzz and overdrive tones that don&#8217;t fit easily into any of the classic categories. The silicon circuitry lends some of the hot, aggressive sound and feel of a BC-108-driven Fuzz Face. But the Nova can also sound a lot more tattered and rowdy&#8212;particularly when you explore the lower ranges of the saturation control.</p>
+
+							<p>Dialing the saturation back to around 9 o&#8217;clock generates some of the sound and feel of a little amplifier stressed to its limits, and this produces hip, unpredictable decay that&#8217;s more chaotic than smooth. You&#8217;ll have to dial back the saturation even further to achieve this sound with humbuckers, so if you want to explore the more unruly and random facets of the Nova&#8217;s fuzz voice, single-coils might be the best match.</p>
+
+							<p>Rolling the saturation completely counter-clockwise generates the texture of a gritty overdrive. It sounds great in this setting, though the lack of an EQ control means you&#8217;ll have to fine-tune the sound using your guitar&#8217;s tone knob.</p>
+
+							<p>Maxing the saturation highlights the range of this deceptively simple pedal. It sounds immense and dangerous without getting bulbous and rotund like a Big Muff, and the overall output has a healthy, well-defined midrange. This keeps the harmonic detail of single notes and big chords intact, even when you venture into more substantial, Fuzz Face-like sustain textures.</p>
+
+							<p>If the Nova lacks anything, it&#8217;s the wide-ranging sensitivity to a guitar&#8217;s volume knob&#8212;a signature of the best Fuzz Faces and Tone Benders. Rolling back your volume cleans up the crunch, and there are great tones here. But there&#8217;s a little less sustain on tap in these attenuated settings than a good silicon Fuzz Face. If you use humbuckers, you&#8217;ll notice this phenomenon a lot less. In general, the smooth output of good humbuckers is an ideal match for the Nova&#8212;particularly if you like to use guitar volume to shape output and tone.</p>
+
+							<h2>The Verdict</h2>
+
+							<p>The Nova is a great fuzz box for the 135 bucks. The simple design, big tone, and excellent note-to-note definition is ideal for bombastic, full-bodied leads or chiming or chugging chord work. And if you need a fuzz that guarantees you&#8217;ll cut through a booming band, there&#8217;s volume and midrange aplenty. The tradeoff may be a little loss of dynamics with some single-coils. But if you tend to keep the pedal to the metal, the Nova will keep you riding high in the mix.</p>
+						</div>
+
+						
+					</div>
+					<img src="img/arrow.png" class="scroll-arrow"/>
+				</div>
+
+				<!-- VIDEO -->
+				<div class="pedal-vid">
+					<video controls poster="img/cover.png">
+					  <source src="video/pedal1.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<!-- RATING -->
+				<div class="pedal-rating">
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Pros:</h3>
+						<p>Simple control set. Huge silicon fuzz tone with classic color and contemporary presence.</p>
+					</div>
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Cons:</h3>
+						<p class="short-con">Could be more sensitive to volume input from single-coils.</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Tones:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-empty.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Ease of Use:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-half.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Build/Design:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-empty.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Value:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-empty.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<div class="rating-info">
+						<p>$135 street</p>
+						<p>daredevilpedals.com</p>
+					</div>
+				</div>
+			</div>
+			<!-- END PEDAL INFO -->
+
+			<!-- START PEDAL INFO -->
+			<div id="mxr-la-machine" class="pedal-section">
+				<h1 class="pedal-name"><span class="name-highlight">MXR</span> La Machine</h1>
+					
+					<!-- REVIEW -->
+				<div class="pedal-review-container">
+					<div class="pedal-review">
+						<img src="img/big/pedal2.png" alt="MXR La Machine" class="pedal-large"/>
+						<div class="pedal-info">
+							<p>What is it about octave fuzz? Hendrix-based hero associations aside, there&#8217;s something else that draws us in. It&#8217;s a sound that&#8217;s a bit filthy, a bit decadent, tough, chaotic, and exploding with sass&#8212;like the electric feel of strutting big city streets in the wee hours. Like all rich and intoxicating things, octave fuzz is best in moderation. But used with discretion and timing, it&#8217;s one of the most distinctive ways to drive a riff or solo home.</p>
+
+							<p>MXR&#8217;s La Machine is as mean and heavy as a good octave fuzz should be. But there&#8217;s also a civility (and we use that word loosely) that makes it very rewarding and a bit more user-friendly&#8212;an octave fuzz that works as well for the neophyte as the experienced octave fuzzist.</p>
+
+							<h2>More Miniscule Machine Gun</h2>
+
+							<p>As the name coyly suggests, La Machine is inspired by the Foxx Tone Machine, a (literally) fuzzy, flocked octave-fuzz box that appeared at the height of the early-&#8217;70s effects boom. While not as renowned as the Octavia or Univox Super-Fuzz, many would argue the Tone Machine was more versatile and sounded every bit as good as those icons.</p>
+
+							<p>Few fuzzes cross over from Beck-era Yardbirds to desert rock excess with such ease.</p>
+
+							<p>Because MXR flipped the PCB on La Machine, it&#8217;s hard to know what means they use to approximate the Tone Machine&#8217;s combination of fuzz corpulence and octave wail. But the control set on the compact La Machine is virtually identical, save for a small push button for the octave function that stands in for the Foxx&#8217;s side-mounted toggle switch. For Tone Machine devotees that kept space-hogging originals off their boards, MXR&#8217;s smaller path to comparable tones will be a godsend.</p>
+
+							<h2>High-Octave Hustle</h2>
+
+							<p>Like a lot of fuzz seekers, I always enjoyed the Tone Machine&#8217;s two-headed versatility. Again, La Machine excels at this duality. The basic fuzz is huge and more Big Muff-like than the fuzz on the original Tone Machine. But it&#8217;s varied, responsive, and wide-ranging enough to be the only fuzz on your board.</p>
+
+							<p>The fattest fuzz tones are abloom with harmonics, exhibiting a high-caloric feel that evokes a cross between &#8217;70s and Sovtek-era Muffs, but with a little less compression and slightly more immediate pick response. La Machine can also generate mid-&#8217;60s-style insect buzz with uncommon sustain when you set the tone and distortion controls just right. Few fuzzes cross over from Beck-era Yardbirds to desert rock excess with such ease.</p>
+
+							<p>Like the basic fuzz, the octave effect is very adaptive, malleable, and responsive to input from the tone and distortion controls. Dialing back the distortion highlights how good the octave signal can sound without the low-end support of the fuzz. In this environment, an octave signal <em>can</em> sound stark naked, but La Machine exhibits a singing quality that players will find more forgiving than what&#8217;s offered by typical octave boxes.</p>
+
+							<p>With the fuzz and octave raging at once, La Machine is monstrous. It can add extra tonnage to Band of Gypsys leads or deliver you to stoner rock heaven. This is one of the smoother pairings of octave and fuzz you&#8217;ll encounter too. And though you still get all the glorious, glitchy phase cancellations and ghost harmonics you want from an octave fuzz, there&#8217;s a smoothness to chords and a touch sensitivity that you don&#8217;t hear and feel as readily in other octave units.</p>
+
+							<h2>The Verdict</h2>
+
+							<p>La Machine is a great octave fuzz for players who find the Octavia or Super-Fuzz a little too hectic and tough to wrangle. It&#8217;s smoother than those units and the fuzz is more in line with players who like a little more gain, more Muff-like flavors, and a more modern touch. And it carries a real cool price for a MXR Custom Shop pedal. Don&#8217;t wait too long though&#8212;word is, they aren&#8217;t making many.</p>
+						</div>
+					</div>
+					<img src="img/arrow.png" class="scroll-arrow"/>
+				</div>
+
+				<!-- VIDEO -->
+				<div class="pedal-vid">
+					<video controls poster="img/cover2.png">
+					  <source src="video/pedal2.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<!-- RATING -->
+				<div class="pedal-rating">
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Pros:</h3>
+						<p>Smooth and forgiving for an octave fuzz. Fuzz voice is huge and versatile by itself.</p>
+					</div>
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Cons:</h3>
+						<p class="short-con">Octave bypass button is small.</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Tones:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-half.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Ease of Use:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-empty.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Build/Design:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-empty.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Value:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-half.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<div class="rating-info">
+						<p>$139 street</p>
+						<p>jimdunlop.com</p>
+					</div>
+				</div>
+			</div>
+			<!-- END PEDAL INFO -->
+
+			<!-- START PEDAL INFO -->
+			<div id="providence-redrock" class="pedal-section">
+				<h1 class="pedal-name"><span class="name-highlight">PROVIDENCE</span> Redrock<br/>OD ROD-1</h1>
+				
+				<!-- REVIEW -->
+				<div class="pedal-review-container">
+					<div class="pedal-review">
+						<img src="img/big/pedal3.png" alt="PROVIDENCE Redrock OD ROD-1" class="pedal-large"/>
+						<div class="pedal-info">
+							<p>While Providence has produced a wide variety of well-built effects over the years, overdrives are the company&#8217;s strength. And the new Red Rock OD ROD-1&#8212;an overdrive specifically designed for single-coil guitars&#8212;is yet another brick in that foundation. With its fat switch and midrange-oriented tone control, it provides flexibility and horsepower for single-coils where other overdrives can be thin or rigid.</p>
+
+							<h2>Little Red Rager</h2>
+
+							<p>Like all Providence boxes, the Japanese-built Red Rock is built to communicate a kind of hefty, road-ready feel. To that end, the footswitch is protected by a steel guard that looks a little like a bottle opener (though I didn&#8217;t test it&#8217;s effectiveness as such), and in general the pedal feels designed and built with a very high quality standard in mind.</p>
+
+							<p>For the most part, the Red Rock adheres to standard overdrive design formula. There&#8217;s master, gain, and tone knobs that adjust output level, gain level, and midrange content, respectively. However, it&#8217;s the two remaining controls that are key to the Red Rock&#8217;s extra flexibility: The fat switch boosts low end, while volume adjusts the input level in the pre-gain stage to compensate for lower-output pickups.</p>
+
+							<h2>Hot Rock</h2>
+
+							<p>The fat switch is one of the most valuable features on the Red Rock. My Fender Jaguar can sound thin on the bottom end, but the fat switch gave it considerably more low-end presence without obscuring its natural voice. There&#8217;s more to the Red Rock than extra bottom end, though: Nudging tone up to 2 o&#8217;clock adds considerable high-midrange focus, giving simple power chords a heavy but cutting presence in two-guitar or bass-heavy ensembles.</p>
+
+							<p>Keeping the tone above noon is vital to maintaining that presence as long as the fat switch is engaged, but much more subdued tone levels still cut impressively through bass and low-mid heaviness. The gain control&#8217;s sweep is considerable. As long as you dial in the appropriate amount of tone in relation to gain, note and string-to-string definition remains excellent. Using a silverface Bassman and a Telecaster, it was easy to cop early Zep lead tones with the gain south of noon.</p>
+
+							<p>The ROD-1&#8217;s focus and clarity assure that it works well with other effects, too. Fuzzes in particular benefit from having the Red Rock&#8217;s midrange boost out front. My vintage RAT has a very narrow sweet spot, but the sweet spot became much bigger with the Red Rock zapping the RAT&#8217;s input.</p>
+
+							<p>While Providence&#8217;s latest overdrive is designed with single-coil pickups in mind, it works great with humbuckers, too. For obvious reasons, the fat switch is less effective with humbuckers, and chords have less definition at higher gain settings. That said, lead tones can still sound searing and huge with humbuckers out front if you make the right adjustments to the tone knob, and if you switch between humbuckers and single coils during a set, a few quick adjustments will keep your signal loud and clear.</p>
+
+							<h2>The Verdict</h2>
+
+							<p>On its own, the Red Rock OD ROD-1 delivers amp-like drive that&#8217;s a perfect match for clean tube amps. The price tag is a bit steep, and there are certainly quite a few ODs on the market that sound great for less. On the other hand, the Red Rock delivers clarity and definition in a thoughtful design that will be a real asset for the single-coil guitarist seeking extra oomph without sacrificing vintage vibe.</p>
+						</div>
+					</div>
+					<img src="img/arrow.png" class="scroll-arrow"/>
+				</div>
+
+				<!-- VIDEO -->
+				<div class="pedal-vid">
+					<video controls poster="img/cover3.png">
+					  <source src="video/pedal3.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<!-- RATING -->
+				<div class="pedal-rating">
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Pros:</h3>
+						<p>Offers great tonal flexibility for single-coils. Powerful midrange control. Responsive to dynamics. Can open up new sounds from other effects in your chain.</p>
+					</div>
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Cons:</h3>
+						<p class="short-con">Noisy at higher gain settings.</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Tones:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-half.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Ease of Use:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-empty.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Build/Design:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-half.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Value:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-empty.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<div class="rating-info">
+						<p>$199 street</p>
+						<p>providence-ltd.com</p>
+					</div>
+				</div>
+			</div>
+			<!-- END PEDAL INFO -->
+
+			<!-- START PEDAL INFO -->
+			<div id="dls-reckless-driver" class="pedal-section">
+				<h1 class="pedal-name"><span class="name-highlight">DLS</span> Reckless Driver</h1>
+				
+				<!-- REVIEW -->
+				<div class="pedal-review-container">
+					<div class="pedal-review">
+						<img src="img/big/pedal4.png" alt="DLS Reckless Driver" class="pedal-large"/>
+						<div class="pedal-info">
+							<p>DLS is famous for their delay and modulation effects&#8212;so much so that to see a new overdrive among their pedal roster verges on, well &#8230; odd. But in classic DLS style, the new dual-channel Reckless Driver isn&#8217;t just another generic OD: It generates boost, overdrive, and distortion in many colors&#8212;from nearly transparent to crunchy&#8212;all with a remarkable dynamic sensitivity.</p>
+
+							<h2>Refined Recklessness</h2>
+
+							<p>While the pedal&#8217;s name hints at the potential for sonic havoc, there is nothing reckless about the pedal&#8217;s design. It feels meticulously engineered and uses top-shelf parts, like Amphenol jacks and 3P3T switching. The craftsmanship is impressive. So is DLS&#8217; ability to cram so many controls onto a relatively compact surface without inducing total confusion. There&#8217;s volume and gain for each channel (the higher-gain &#8220;boost&#8221; channel and the curiously named &#8220;normal&#8221; channel), a shared EQ section consisting of bass and treble knobs, two mini knobs for each channel&#8217;s wet/dry mix, a toggle switch for attack, and two footswitches. Under the hood you&#8217;ll find internal trim pots for input stage and distortion input stage.</p>
+
+							<p>The Reckless Driver feels very much like an extension of your hands and instrument.</p>
+
+							<h2>Pedal to the Metal</h2>
+
+							<p>I tested the Reckless Driver using a Gibson SG and a Music Man Axis Sport through a Fender Super-Sonic combo and a solid-state Roland Jazz Chorus, and the extent to which you can tailor this pedal to amps of such radically different circuitry is remarkable.</p>
+
+							<p>The mix knobs let you balance how much clean signal you want blended in, which significantly expands the Reckless Diver&#8217;s palette. With the normal mix control set in the middle and the normal gain set just shy of noon, I got a very pleasing, edge-of-breakup, low-to-mid gain sound that highlights the harmonic detail in open-position chords.</p>
+
+							<p>Even at this gain level, the pedal has great range. The unit&#8217;s touch sensitivity is very perceptible and musical, and allows you to add texture to different sections in a song based on the intensity of your attack. The harder you hit the strings, the rattier the overdrive sounds.</p>
+
+							<p>But a light attack or thumbpicking can make the pedal sound downright dignified. Indeed, the Reckless Driver feels very much like an extension of your hands and instrument. With the gain set low, the normal channel works well as an always-on signal enhancer that can thicken and excite an otherwise anemic amp tone.</p>
+
+							<p>The circuit routes the normal channel into the boost channel, and the drive from the combined channels generates some of the most complex and natural amplifier overdrive I&#8217;ve ever heard with a pedal in the mix. Individual notes bloom and decay with a very organic feel.</p>
+
+							<p>Maxing the gain on both channels yields a fairly aggressive distortion. But where a lot of pedals would drown dynamics and overtones in a sea of compressed, dark gain, the Reckless Driver is articulate, clear, bright, lively, and open sounding. Even with the treble all the way off and the bass all the way up, there&#8217;s plenty of note-to-note definition and room for picking dynamics.</p>
+
+							<p>You can tailor how the Reckless Driver interacts with your picking by using the attack toggle switch. With the switch to the left, you get a softer and warmer attack that works well for fusion and smooth-but-heavy blues. Flicking the switch to the right adds brightness and a faster attack. The shift can be subtle but you can definitely feel the difference.</p>
+
+							<h2>The Verdict</h2>
+
+							<p>There&#8217;s no shortage of dirt boxes out there. And there&#8217;s some very good 2-channel overdrive and distortion units at great prices. But it&#8217;s not easy to find one that offers as broad a range of natural OD and distortion&#8212;sounds that can bring your playing to life&#8212;as the Reckless Driver. Given the unit&#8217;s high quality and versatility, it&#8217;s an excellent value too.</p>
+						</div>
+					</div>
+					<img src="img/arrow.png" class="scroll-arrow"/>
+				</div>
+
+				<!-- VIDEO -->
+				<div class="pedal-vid">
+					<video controls poster="img/cover4.png">
+					  <source src="video/pedal4.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<!-- RATING -->
+				<div class="pedal-rating">
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Pros:</h3>
+						<p>Tube-like sounds. Lots of colors and sound options. Great dynamics.</p>
+					</div>
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Cons:</h3>
+						<p>Shared EQ. Getting the best sounds for your rig may take some tweaking.</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Tones:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-empty.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Ease of Use:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-empty.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Build/Design:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Value:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-half.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<div class="rating-info">
+						<p>$179 street</p>
+						<p>dlseffects.com</p>
+					</div>
+				</div>
+			</div>
+			<!-- END PEDAL INFO -->
+
+			<!-- START PEDAL INFO -->
+			<div id="carl-martin" class="pedal-section">
+				<h1 class="pedal-name"><span class="name-highlight">CARL MARTIN</span><br/>Purple Moon Fuzz/Vibe</h1>
+				
+				<!-- REVIEW -->
+				<div class="pedal-review-container">
+					<div class="pedal-review">
+						<img src="img/big/pedal5.png" alt="Carl Martin Purple Moon Fuzz/Vibe" class="pedal-large"/>
+						<div class="pedal-info">
+							<p>Denmark regularly tops the list of Happiest Places on Earth. Obviously that&#8217;s due to their unusually high number of effects manufacturers per capita. TC Electronic, Emma, Reuss, and T-Rex are a few of the builders that call the nation their home. They have a reputation for building high-quality, no-nonsense effects, and the same is true of Gren&#229;&#8217;s East Sound Research, AKA Carl Martin. (The Purple Moon, however, is part of Carl Martin&#8217;s Chinese-made Vintage series.)</p>
+
+							<h2>Nailing the Vibe</h2>
+
+							<p>Carl Martin&#8217;s latest offering is a psychedelic toolkit that combines classic Uni-Vibe tones with blistering silicon fuzz in one bombproof housing. The controls are intuitive and well organized: On the vibe side are knobs for speed 1 and speed 2, with a footswitch to toggle between them and flashing LEDs to indicate their rates. Depth and level controls let you dial in the desired amount of swirl.</p>
+
+							<p>Meanwhile, mini-pots set the fuzz amount and level. Jacks are top-mounted, minimizing pedalboard clutter, though I wish the foam base plate was packaged separately, because it&#8217;s a chore to remove if you prefer Velcro. The pedal runs via 9V battery or AC adapter.</p>
+
+							<p>As if wired to do so, I grabbed my Strat to test drive the Purple Moon, but then decided to avoid the obvious. With 1960 Les Paul Reissue and Jazzmaster in hand, I plugged into my favorite new amp, a Dusky D20, and did everything in my power <em>not</em> to play &#8220;Breathe&#8221; first.</p>
+
+							<p>Carl Martin has absolutely nailed the Uni-vibe sound, delivering all the blubbery goodness you&#8217;d expect. Remember, Uni-Vibes were developed as &#8220;portable Leslies,&#8221; so it&#8217;s great to be able to approximate the big cabinet&#8217;s two speeds, alternating between slow, swirly phasiness and full-on, rotating chop. Since there&#8217;s no expression pedal input, it might have been nice to include a ramp-speed control, since that &#8220;taxi to takeoff&#8221; effect is one of the best things about vibe effects of this type. Not providing it here seems like an oversight.</p>
+
+							<h2>Serious Sizzle</h2>
+
+							<p>The fuzz is fantastic. It&#8217;s crispy, with the correct quantity of sizzle&#8212;which is to say, ungodly amounts. It&#8217;s important to note, though, that while the vibe can be used without fuzz, the inverse is not true&#8212;there&#8217;s no fuzz-only option. It&#8217;s a shame, because I love this fuzz! But while I can&#8217;t help feeling that Carl Martin has limited the pedal&#8217;s usefulness by not providing true two-in-one switching, perhaps it&#8217;s best to think of the Purple Moon as a Uni-Vibe pedal that tosses in a bonus fuzz, especially since you get both effects for about the same price as many vibe-only pedals.</p>
+
+							<p>At any rate, you can&#8217;t argue with the tones. There is a lot of vibe control here, and when the fuzz is engaged the paint-peeling lysergia rating on this thing is a solid 10. (Full disclosure: upon conclusion of this review I <em>totally</em> grabbed my Strat and played &#8220;Us and Them.&#8221;)</p>
+						</div>
+					</div>
+					<img src="img/arrow.png" class="scroll-arrow"/>
+				</div>
+
+				<!-- VIDEO -->
+				<div class="pedal-vid">
+					<video controls poster="img/cover5.png">
+					  <source src="video/pedal5.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<!-- RATING -->
+				<div class="pedal-rating">
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Pros:</h3>
+						<p>Compact. Well-built. Stellar fuzz. Powerful two-speed vibe.</p>
+					</div>
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Cons:</h3>
+						<p>No fuzz without vibe. No expression pedal input or ramp control.</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Tones:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-half.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Ease of Use:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-empty.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Build/Design:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-half.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Value:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-empty.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<div class="rating-info">
+						<p>$148 street</p>
+						<p>carlmartin.com</p>
+					</div>
+				</div>
+			</div>
+			<!-- END PEDAL INFO -->
+
+			<!-- START PEDAL INFO -->
+			<div id="way-huge-havalina" class="pedal-section">
+				<h1 class="pedal-name"><span class="name-highlight">WAY HUGE</span> Havalina</h1>
+				
+				<!-- REVIEW -->
+				<div class="pedal-review-container">
+					<div class="pedal-review">
+						<img src="img/big/pedal6.png" alt="Way Huge Havalina" class="pedal-large"/>
+						<div class="pedal-info">
+							<p>Think about it: &#8217;60s-vintage fuzz is a funny thing. Most guitar players <em>claim</em> to love it. But a lot of modern tone connoisseurs will turn up their nose at a Fuzz Face or Tone Bender if you contextualize one outside of a Jimi or Zep classic. And forget asking half these folks to actually <em>play </em>a vintage fuzz.</p>
+
+							<p>See, those old fuzzes are temperamental, unforgiving things. They snarl, screech, sound harsh, punch back, <em>feed</em> back. And extracting the best sounds means paying attention to less-than-glamorous links in the tone chain like guitar volume and tone knobs that lack cachet among stage-snooping pedal kooks. But when you take the time to get to know a cool, &#8217;60s-inspired germanium fuzz like Way Huge&#8217;s new Havalina, you realize just how versatile, vicious, malleable, and musical they can be. With the inclusion of up-to-date design touches like smooth quiet-relay switching, the Havalina has the stuff to make converts out of preset-addicted modern tone softies everywhere.</p>
+
+							<p>The combination of sizzle and singing harmonics in the upper midrange and top end make this a screaming fuzz for leads.</p>
+
+							<h2>From Russia with Love</h2>
+
+							<p>Like every Way Huge pedal, the Havalina is designed by Jeorge Tripps and built around a brick-house anodized aluminum enclosure. There&#8217;s a one-click battery compartment on the bottom of the unit and a 9V jack on top, and opening up the fuzz reveals a two-tiered circuit board array. The one at the top is dedicated to the I/O jack and DC power.</p>
+
+							<p>The larger board is dedicated to the analog fuzz circuit itself and is populated by three hat-shaped Russian germanium transistors and five outsized yellow capacitors. They impart a sense of tough, professional, road-readiness.</p>
+
+							<h2>Mind-bending Fuzz Machine</h2>
+
+							<p>The Havalina&#8217;s three-transistor, tri-knob construction suggest inspiration by way of a Sola Sound Tone Bender. Perhaps not coincidentally, so do the Way Huge&#8217;s sound and dynamics.</p>
+
+							<p>Starting exploration of the Havalina&#8217;s range with each control around halfway up offers an idea of how varied the pedal can be. In this neutral setting, it&#8217;s not especially aggressive&#8212;recalling a really hot and biting overdrive as much as a fuzz. With a little volume attenuation from your guitar, you get smoother OD tones. With the guitar volume wide open, the Havalina has the dry, husky, sassy snap of Jimmy Page and Paul Kossoff&#8217;s most unadorned early tones.</p>
+
+							<p>As good as the Havalina sounds at these and even tamer settings, it&#8217;s most exciting when the fuzz is up in its highest reaches. I&#8217;ve heard smoother fuzz from Tone Bender-style circuits, but the combination of sizzle and singing harmonics in the upper midrange and top end make this a screaming fuzz for leads, and a monster for freakbeat and garage-psych lines and riffs. Chords also sound fat and detailed at these higher fuzz levels&#8212;a feat few &#8217;60s-style germanium fuzzes can pull off with such aplomb.</p>
+
+							<p>You can get even more mileage out of the Havalina through active use of tone controls on the pedal and your guitar. The Havalina is rewardingly sensitive to adjustments of the latter, but it&#8217;s own tone control is a very powerful sound-shaping tool. Using mellower, less trebly settings from both conjures cool, wooly Randy California fuzz tones and Pagey&#8217;s hollow fuzz moans from &#8220;You Shook Me.&#8221;</p>
+
+							<h2>The Verdict</h2>
+
+							<p>The Havalina speaks in fuzz colors from buzzing to brutalizing&#8212;just like a good old Tone Bender would&#8212;but from a much more stable, well-manufactured, and reliable platform. It&#8217;s a touch fizzy in the high end if you&#8217;re not careful with the tone controls on the box and your guitar. But it&#8217;s also very responsive to tone and volume adjustments, and can be massaged into shape for humbuckers, single-coils, and bright or dark sounding amps. With its impressive quality and sounds, the Havalina is an ideal platform for those just launching vintage fuzz explorations and a bargain for players who already have the buzz.</p>
+						</div>
+					</div>
+					<img src="img/arrow.png" class="scroll-arrow"/>
+				</div>
+
+
+				<!-- VIDEO -->
+				<div class="pedal-vid">
+					<video controls poster="img/cover6.png">
+					  <source src="video/pedal6.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<!-- RATING -->
+				<div class="pedal-rating">
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Pros:</h3>
+						<p>Surprising range of fuzz voices. Very well built. Great price for an authentic sounding vintage-style fuzz.</p>
+					</div>
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Cons:</h3>
+						<p class="short-con">Will sound bright to the uninitiated.</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Tones:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-empty.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Ease of Use:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-half.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Build/Design:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-half.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<!-- rating row -->
+					<div class="rating-row">
+						<h3>Value:</h3>
+						<p class="rating-images">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+							<img src="img/pick-full.png" alt="" class="rating-pick">
+						</p>
+					</div>
+
+					<div class="rating-info">
+						<p>$119 street</p>
+						<p>jimdunlop.com</p>
+					</div>
+				</div>
+			</div>
+			<!-- END PEDAL INFO -->
+
+			
+
+			<a href="#pedals" class="menu-back mobile-only">Back to menu</a>
+		</section>
+	</main>
+</article>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
